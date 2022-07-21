@@ -1,0 +1,3 @@
+data=details(name=jsondat['name], contents=da['contents']
+
+data.save()

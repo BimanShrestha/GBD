@@ -1,0 +1,48 @@
+{
+  "name": "google",
+  "main_content": [
+    {      "category": "organic",
+      "main_xpath": "//div[contains(@cel_widget_id,'MAIN-SEARCH_RESULTS')]//",
+      "content": [
+        {
+          "field": "title",
+          "xpath": "ah2"
+        },
+        {
+          "field": "rating",
+          "xpath": "ai"
+        },
+        {
+          "field": "rating_count",
+          "xpath": "aspan/a/span"
+        },
+        {
+          "field": "price",
+          "xpath": "a"
+        }
+      ]
+    },
+    {
+      "category": "sponsored",
+      "main_xpath": "//div//",
+      "content": [
+        {
+          "field": "title",
+          "xpath": "bh2"
+        },
+        {
+          "field": "rating",
+          "xpath": "bisn"
+        },
+        {
+          "field": "rating_count",
+          "xpath": "bsa"
+        },
+        {
+          "field": "price",
+          "xpath": "bss"
+        }
+      ]
+    }
+  ]
+}

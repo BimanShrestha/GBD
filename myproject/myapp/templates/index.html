@@ -1,0 +1,26 @@
+{% include 'navbar.html'%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <h1>Home PAGE</h1>
+</head>
+<body>
+<h2>Upload a JSON file for Scraping</h2>
+<form method="post" class="post-form" enctype="multipart/form-data">
+      {%csrf_token%}
+      {{form.as_p}}
+  <input type="file" id="mysFile" name="json" accept=".json">
+    <button type="submit" class="save btn btn-default">UPLOAD</button>
+<h2>Upload a CSV file for Scraping</h2>
+ <form method="get" class="post-form" enctype="multipart/form-data">
+     {%csrf_token%}
+      {{form.as_p}}
+       <input type="file" id="csv" name="csv" accept=".csv">
+     <button type="submit" class="save btn btn-default">UPLOAD</button>
+<h2>Scrape</h2>
+     <button type="submit" class="save btn btn-default">Scrape</button>
+</form>
+</form>
+</body>
+</html>

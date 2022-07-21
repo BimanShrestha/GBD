@@ -1,0 +1,20 @@
+{% include 'navbar.html'%}
+<h2>Upload a Csv file for Scraping</h2>
+ <form method="post" class="post-form" enctype="multipart/form-data">
+     {%csrf_token%}
+      {{form.as_p}}
+       <input type="file" id="csv" name="csv" accept=".csv">
+     <button type="submit" class="save btn btn-default">Save</button>
+<h2>Choose a schema</h2>
+
+<form>
+  <label for="schema">Choose a Schema:</label>
+  <select name="schema" id="cars">
+    <option value="Goodle">Google</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Scrape">
+</form>
+
+
+<!--    Output_22/02/2022-->

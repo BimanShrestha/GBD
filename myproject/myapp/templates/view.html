@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>LISt OF Schema</h1>
+<table>
+    <thead>
+    <tr>
+        <th>schemename</th>
+        <th>category</th>
+        <th>Mainxpath</th>
+        <th br>field</th>
+        <th br>xpath</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <td>
+        {%for n in name%}
+        <p>{{n}}</p>
+        {%endfor%}
+    </td>
+
+    <td>{%for c in category%}
+        <p>{{c}}</p>
+        {%endfor%}
+    </td>
+    <td>{% for ms in main_xpath %}
+        <p>{{ms}}</p>
+        {%endfor%}
+    </td>
+    <td>{%for f in field%}
+        <p>{{f}}</p>
+        {%endfor%}
+    </td>
+    <td>
+        ss
+    </td>
+    <td>
+        ss
+    </td>
+    </tbody>
+</table>
+</body>
+</html>

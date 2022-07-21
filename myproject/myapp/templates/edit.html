@@ -1,0 +1,45 @@
+{% include 'navbar.html'%}
+{%block content%}
+
+<h1>Schema Details</h1>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Scheme Name</th>
+        <th>Category</th>
+        <th>Field</th>
+        <th>Xpath</th>
+        <th>Main Xpath</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for details in detail_list%}
+    <td>{{details.scheme}}</td>
+    <td>{{details.category}}</td>
+    <td>{{details.field}}</td>
+    <td>
+        <form method="post">
+            {% csrf_token %}
+            <br>
+            <input id="xpath" name="new_xpath" type="text" value="{{details.xapth}}">
+
+            <input type="hidden" name="database_id" value="{{ details.id }}">
+
+            <input type="submit" value=Update></form>
+    </td>
+    <td>{{details.mainxpath}}</td>
+
+
+
+    </tbody>
+    {%endfor%}
+
+
+    {%endblock%}
+</table>
+
+
+
+
+
+

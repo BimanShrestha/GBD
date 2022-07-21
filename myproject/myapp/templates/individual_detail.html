@@ -1,0 +1,24 @@
+{%block content%}
+<h1>Details page</h1>
+
+<h1>Schema Details</h1>
+<table>
+    <thead>
+    <tr>
+        <th>schemename</th>
+        <th>category</th>
+        <th>field</th>
+        <th>xpath</th>
+        <th>Mainxpath</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for detail in detail_list%}
+    <td>{{detail.scheme}}</td>
+    <td>{{detail.category}}</td>
+    <td>{{detail.field}}</td>
+    <td>{{detail.xapth}}</td>
+    <td>{{detail.mainxpath}}</td>
+    </tbody>
+     {%endfor%}
+ {% endblock %}
